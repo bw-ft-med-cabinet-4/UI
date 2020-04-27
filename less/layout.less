@@ -7,7 +7,7 @@
     display: flex;
     flex-wrap: wrap;
 
-    padding: 0 @basic-gutter;
+    padding: 0 (@basic-gutter / 2);
     margin: 0 auto;
 
     @media @desktop {
@@ -20,6 +20,10 @@
 
 [class*="col-"] {
     padding-right: @basic-gutter;
+    
+    &:only-child {
+        padding-right: 0;
+    }
 }
 
 .make-cols(xs);

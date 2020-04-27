@@ -393,16 +393,19 @@ h5 {
 .container {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 3rem;
+  padding: 0 1.5rem;
   margin: 0 auto;
 }
 @media (min-width: 1024px) {
   .container {
-    width: 1110px;
+    width: 1140px;
   }
 }
 [class*="col-"] {
   padding-right: 3rem;
+}
+[class*="col-"]:only-child {
+  padding-right: 0;
 }
 .col-xs-12 {
   width: 100%;

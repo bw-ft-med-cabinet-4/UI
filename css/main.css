@@ -409,7 +409,7 @@ h5 {
 .container {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 1.5rem;
+  padding: 0 3rem;
   margin: 0 auto;
 }
 @media (min-width: 1024px) {
@@ -696,7 +696,7 @@ textarea.field {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 1.5rem;
+  padding: 0 3rem;
 }
 @media (min-width: 1024px) {
   #nav .nav-inner {
@@ -736,8 +736,14 @@ textarea.field {
 }
 #features {
   background-color: #3F3D56;
-  padding-top: 18rem;
-  padding-bottom: 18rem;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+}
+@media (min-width: 1024px) {
+  #features {
+    padding-top: 18rem;
+    padding-bottom: 18rem;
+  }
 }
 #features p,
 #features li,

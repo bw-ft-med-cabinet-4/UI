@@ -53,3 +53,38 @@ textarea.field {
     padding: (@basic-gutter / 2);
     line-height: 1.4;
 }
+
+
+// Checkbox
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+
+    input {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        -o-appearance: none;
+        appearance: none;
+
+        cursor: pointer;
+        width: 6rem;
+        height: 6rem;
+        border: 1px solid @color-gray-light;
+        border-radius: 0.5rem;
+        margin-right: @basic-gutter / 2;
+
+        &:focus {
+            outline: none;
+            border-color: @color-purple;
+        }
+
+        &:checked {
+            background-image: url("../images/tick.svg");
+            background-position: center;
+            background-size: 3rem;
+            background-repeat: no-repeat;
+        }
+    }
+}

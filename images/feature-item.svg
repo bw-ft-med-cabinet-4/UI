@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 64 (93537) - https://sketch.com -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Oval" stroke="#FFFFFF" cx="30" cy="30" r="29.5"></circle>
+        <g id="icons/tick-white" transform="translate(15.000000, 19.000000)" fill="#FFFFFF">
+            <g id="tick" transform="translate(0.000000, 0.000000)">
+                <polygon id="Path" fill-rule="nonzero" points="9.54120267 18.096882 2.38530067 10.94098 0 13.3262806 9.54120267 22.8674833 29.986637 2.422049 27.6013363 0.0367483296"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

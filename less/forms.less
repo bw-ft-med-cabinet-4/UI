@@ -32,3 +32,24 @@
         background-color: darken(@color-purple, 10%);
     }
 }
+
+
+// Inputs
+
+.field {
+    line-height: 6rem;
+    display: inline-block;
+    border-radius: 0.5rem;
+    border: 1px solid @color-gray-light;
+    padding: 0 (@basic-gutter / 2);
+
+    &:focus {
+        outline: none;
+        border-color: @color-purple;
+    }
+}
+
+textarea.field {
+    padding: (@basic-gutter / 2);
+    line-height: 1.4;
+}

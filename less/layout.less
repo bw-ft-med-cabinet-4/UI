@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding: 0 @basic-gutter;
+    margin: 0 auto;
+
+    @media @desktop {
+        width: @container-width;
+    }
+}
+
+
+// Columns
+
+[class*="col-"] {
+    padding-right: @basic-gutter;
+}
+
+.make-cols(xs);
+
+@media @phone {
+    .make-cols(sm);
+}
+
+@media @tablet {
+    .make-cols(md);
+}
+
+@media @desktop {
+    .make-cols(lg);
+}

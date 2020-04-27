@@ -1,0 +1,14 @@
+
+.make-cols(@suffix) {
+
+    @counter: 12;
+
+    .loop(@counter) when (@counter > 0) {
+        .col-@{suffix}-@{counter} {
+            width: 100% / 12 * @counter;
+        }
+        .loop((@counter - 1));
+    }
+
+    .loop(@counter);
+}

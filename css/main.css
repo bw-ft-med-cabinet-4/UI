@@ -348,6 +348,11 @@ template {
   display: none;
 }
 
+/*
+    Usage:
+    for single property  .smooth-transition(color);
+    for multiple properties  .smooth-transition(~"color, background-color"); 
+*/
 html {
   font-size: 62.5%;
 }
@@ -357,7 +362,9 @@ body {
 }
 a {
   color: #444444;
-  transition: color 0.4s ease;
+  transition-property: color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
 }
 a:hover {
   color: #6C63FF;
@@ -564,4 +571,32 @@ h5 {
   .col-lg-1 {
     width: 8.33333333%;
   }
+}
+.btn {
+  line-height: 6rem;
+  color: #444444;
+  background-color: #d8d8d8;
+  border: 0;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  padding: 0 3rem;
+  display: inline-block;
+  text-decoration: none;
+  transition-property: color, background-color;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+}
+.btn:hover {
+  color: #6C63FF;
+  background-color: #bfbfbf;
+}
+.btn-primary {
+  background-color: #6C63FF;
+  color: white;
+}
+.btn-primary:hover {
+  color: white;
+  background-color: #3c30ff;
 }

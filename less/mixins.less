@@ -14,6 +14,13 @@
 }
 
 
+/*
+    Usage:
+    for single property  .smooth-transition(color);
+    for multiple properties  .smooth-transition(~"color, background-color"); 
+*/
 .smooth-transition(@property) {
-    transition: @property 0.4s ease;
+    transition-property: @property;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
 }

@@ -384,6 +384,7 @@ h5 {
   line-height: 1.2;
   margin-bottom: 3rem;
   margin-top: 0;
+  text-transform: capitalize;
 }
 h1 {
   font-size: 7.2rem;

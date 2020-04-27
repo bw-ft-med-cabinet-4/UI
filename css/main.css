@@ -355,9 +355,17 @@ body {
   font-size: 1.6rem;
   font-family: 'Muli', sans-serif;
 }
+a {
+  color: #444444;
+  transition: color 0.4s ease;
+}
+a:hover {
+  color: #6C63FF;
+}
 p {
   color: #8F8F8F;
   margin-bottom: 1.6rem;
+  line-height: 1.4;
 }
 h1,
 h2,

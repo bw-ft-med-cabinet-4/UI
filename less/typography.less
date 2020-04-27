@@ -7,9 +7,25 @@ body {
     font-family: 'Muli', sans-serif;
 }
 
+
+// Links
+
+a {
+    color: @color-gray-dark;
+    .smooth-transition(color);
+
+    &:hover {
+        color: @color-purple;
+    }
+}
+
+
+// Paragraphs
+
 p {
     color: @color-gray-medium;
     margin-bottom: 1.6rem;
+    line-height: 1.4;
 }
 
 

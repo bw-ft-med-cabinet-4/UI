@@ -658,3 +658,21 @@ textarea.field {
   background-size: 1.5rem;
   background-repeat: no-repeat;
 }
+#hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.hero-image {
+  background-image: url("../images/doctors.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  display: none;
+}
+@media (min-width: 768px) {
+  .hero-image {
+    display: block;
+  }
+}

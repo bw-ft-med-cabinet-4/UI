@@ -353,6 +353,39 @@ html {
 }
 body {
   font-size: 1.6rem;
+  font-family: 'Muli', sans-serif;
+}
+p {
+  color: #8F8F8F;
+  margin-bottom: 1.6rem;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: #444444;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 3rem;
+  margin-top: 0;
+}
+h1 {
+  font-size: 7.2rem;
+}
+h2 {
+  font-size: 6rem;
+}
+h3 {
+  font-size: 4.8rem;
+}
+h4 {
+  font-size: 3.2rem;
+}
+h5 {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
 }
 * {
   box-sizing: border-box;

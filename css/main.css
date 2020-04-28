@@ -771,6 +771,28 @@ textarea.field {
   text-transform: uppercase;
   font-weight: 800;
 }
+#reviews {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+@media (min-width: 1024px) {
+  #reviews {
+    margin-top: 18rem;
+    margin-bottom: 18rem;
+  }
+}
+#reviews .review {
+  margin-bottom: 3rem;
+  border: 1px solid #d8d8d8;
+  padding: 3rem;
+  border-radius: 0.5rem;
+  text-align: center;
+}
+#reviews .review .avatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 9999px;
+}
 #cta {
   background-color: #3F3D56;
   padding-top: 9rem;

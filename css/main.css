@@ -429,7 +429,6 @@ main {
 .row {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 3rem;
 }
 [class*="col-"] {
   padding-right: 3rem;
@@ -589,7 +588,8 @@ main {
 }
 form .field,
 form .checkbox,
-form .btn {
+form .btn,
+form .select {
   margin-bottom: 3rem;
 }
 label {
@@ -611,6 +611,7 @@ label {
   display: block;
   width: 100%;
   text-decoration: none;
+  margin-bottom: 3rem;
   transition-property: color, background-color;
   transition-duration: 0.4s;
   transition-timing-function: ease;

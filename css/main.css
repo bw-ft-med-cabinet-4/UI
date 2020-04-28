@@ -594,6 +594,7 @@ form .checkbox,
 form .btn,
 form .select {
   margin-bottom: 3rem;
+  width: 100%;
 }
 label {
   display: block;
@@ -612,7 +613,6 @@ label {
   font-weight: 800;
   padding: 0 3rem;
   display: block;
-  width: 100%;
   text-decoration: none;
   margin-bottom: 3rem;
   text-align: center;

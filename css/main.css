@@ -428,7 +428,7 @@ main {
 }
 .row {
   display: flex;
-  flex-grow: 1;
+  flex-wrap: wrap;
 }
 [class*="col-"] {
   padding-right: 3rem;

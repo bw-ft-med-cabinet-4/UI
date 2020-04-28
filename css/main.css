@@ -406,6 +406,14 @@ h5 {
 * {
   box-sizing: border-box;
 }
+main {
+  padding-top: 21rem;
+}
+@media (min-width: 1024px) {
+  main {
+    padding-top: 15rem;
+  }
+}
 .container {
   display: flex;
   flex-wrap: wrap;
@@ -417,6 +425,10 @@ h5 {
   .container {
     width: 1140px;
   }
+}
+.row {
+  display: flex;
+  flex-grow: 1;
 }
 [class*="col-"] {
   padding-right: 3rem;
@@ -574,6 +586,17 @@ h5 {
     width: 8.33333333%;
   }
 }
+form .field,
+form .checkbox,
+form .btn {
+  margin-bottom: 3rem;
+}
+label {
+  display: block;
+  font-weight: 800;
+  color: #8F8F8F;
+  margin-bottom: 1.5rem;
+}
 .btn {
   line-height: 6rem;
   color: #444444;
@@ -584,7 +607,8 @@ h5 {
   text-transform: uppercase;
   font-weight: 800;
   padding: 0 3rem;
-  display: inline-block;
+  display: block;
+  width: 100%;
   text-decoration: none;
   transition-property: color, background-color;
   transition-duration: 0.4s;
@@ -604,7 +628,8 @@ h5 {
 }
 .field {
   line-height: 6rem;
-  display: inline-block;
+  display: block;
+  width: 100%;
   border-radius: 0.5rem;
   border: 1px solid #d8d8d8;
   padding: 0 1.5rem;

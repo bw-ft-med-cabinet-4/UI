@@ -2,6 +2,13 @@
     box-sizing: border-box;
 }
 
+main {
+    padding-top: 9rem + 6rem + @basic-gutter * 2;
+    @media @desktop {
+        padding-top: 9rem + @basic-gutter * 2;
+    }
+}
+
 
 .container {
     display: flex;
@@ -14,6 +21,11 @@
     @media @desktop {
         width: @container-width;
     }
+}
+
+.row {
+    display: flex;
+    flex-grow: 1;
 }
 
 

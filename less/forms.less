@@ -1,3 +1,19 @@
+form {
+    .field, .checkbox, .btn {
+        margin-bottom: @basic-gutter;
+    }
+
+}
+
+
+// Labels
+
+label {
+    display: block;
+    font-weight: 800;
+    color: @color-gray-medium;
+    margin-bottom: @basic-gutter / 2;
+}
 
 
 // Buttons
@@ -12,7 +28,8 @@
     text-transform: uppercase;
     font-weight: 800;
     padding: 0 @basic-gutter;
-    display: inline-block;
+    display: block;
+    width: 100%;
     text-decoration: none;
 
     .smooth-transition(~"color, background-color");
@@ -38,7 +55,8 @@
 
 .field {
     line-height: 6rem;
-    display: inline-block;
+    display: block;
+    width: 100%;
     border-radius: 0.5rem;
     border: 1px solid @color-gray-light;
     padding: 0 (@basic-gutter / 2);

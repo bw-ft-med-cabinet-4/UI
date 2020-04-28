@@ -430,6 +430,9 @@ main {
   display: flex;
   flex-wrap: wrap;
 }
+.row [class*="col-"]:last-child {
+  padding-right: 0;
+}
 [class*="col-"] {
   padding-right: 3rem;
 }
@@ -687,30 +690,23 @@ textarea.field {
   background-size: 1.5rem;
   background-repeat: no-repeat;
 }
-#hero {
-  padding-top: 18rem;
-  padding-bottom: 3rem;
-  display: flex;
-  align-items: center;
-}
-@media (min-width: 1024px) {
-  #hero {
-    padding-top: 0;
-    height: 100vh;
-  }
-}
-.hero-image {
-  background-image: url("../images/doctors.svg");
-  background-size: 80%;
+a.logo-small {
+  background-image: url("../images/logo-small.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  height: 100%;
-  display: none;
+  background-position: top left;
+  display: block;
+  width: 126px;
+  height: 16px;
+  text-indent: -9999px;
 }
-@media (min-width: 768px) {
-  .hero-image {
-    display: block;
-  }
+a.logo-large {
+  background-image: url("../images/logo-large.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: block;
+  width: 203px;
+  height: 25px;
+  text-indent: -9999px;
 }
 header {
   position: fixed;
@@ -755,6 +751,31 @@ header ul a {
 }
 header .logo-small {
   margin-top: 3.7rem;
+}
+#hero {
+  padding-top: 18rem;
+  padding-bottom: 3rem;
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 1024px) {
+  #hero {
+    padding-top: 0;
+    height: 100vh;
+  }
+}
+.hero-image {
+  background-image: url("../images/doctors.svg");
+  background-size: 80%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100%;
+  display: none;
+}
+@media (min-width: 768px) {
+  .hero-image {
+    display: block;
+  }
 }
 #features {
   background-color: #3F3D56;
@@ -836,20 +857,11 @@ header .logo-small {
   max-width: 540px;
   margin: 0 3rem;
 }
-a.small-logo {
-  background-image: url("../images/logo-small.svg");
-  background-repeat: no-repeat;
-  background-position: top left;
-  display: block;
-  width: 126px;
-  height: 16px;
-  text-indent: -9999px;
-}
 footer {
   margin-top: 9rem;
   margin-bottom: 9rem;
 }
-footer .small-logo {
+footer .logo-small {
   margin-bottom: 3rem;
 }
 footer nav ul {
@@ -861,4 +873,25 @@ footer nav ul {
 }
 footer nav li {
   margin: 0 3rem 3rem 0;
+}
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.auth-container {
+  width: 100%;
+  margin: 0 3rem;
+}
+@media (min-width: 1024px) {
+  .auth-container {
+    width: 810px;
+  }
+}
+.auth-container h2 {
+  text-align: center;
+}
+.auth-container .logo-large {
+  margin: 6rem auto;
 }

@@ -1,7 +1,13 @@
 #hero {
-    height: 100vh;
+    padding-top: 18rem;
+    padding-bottom: @basic-gutter;
     display: flex;
     align-items: center;
+
+    @media @desktop {
+        padding-top: 0;
+        height: 100vh;
+    }
 }
 
 

@@ -409,6 +409,7 @@ h5 {
 .container {
   display: flex;
   flex-wrap: wrap;
+  width: 100%;
   padding: 0 3rem;
   margin: 0 auto;
 }
@@ -660,9 +661,16 @@ textarea.field {
   background-repeat: no-repeat;
 }
 #hero {
-  height: 100vh;
+  padding-top: 18rem;
+  padding-bottom: 3rem;
   display: flex;
   align-items: center;
+}
+@media (min-width: 1024px) {
+  #hero {
+    padding-top: 0;
+    height: 100vh;
+  }
 }
 .hero-image {
   background-image: url("../images/doctors.svg");
@@ -677,62 +685,49 @@ textarea.field {
     display: block;
   }
 }
-#nav {
+header {
   position: fixed;
-  display: flex;
   height: 9rem;
-  width: 100%;
   border-bottom: 1px solid #d8d8d8;
   background-color: white;
-  align-items: center;
-}
-@media (min-width: 1024px) {
-  #nav {
-    justify-content: center;
-  }
-}
-#nav .nav-inner {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 0 3rem;
+  width: 100%;
 }
 @media (min-width: 1024px) {
-  #nav .nav-inner {
-    width: 1140px;
-    flex-direction: row;
-    justify-content: flex-start;
+  header nav {
+    margin-top: 1.5rem;
   }
 }
-#nav .nav-links {
-  display: none;
+header ul {
+  background-color: white;
+  position: fixed;
+  left: 0;
+  top: 9rem;
+  width: 100vw;
   list-style-type: none;
   margin: 0;
-  padding: 0;
-}
-#nav .nav-links a {
-  text-decoration: none;
-}
-#nav .nav-links li {
-  margin-left: 3rem;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #d8d8d8;
 }
 @media (min-width: 1024px) {
-  #nav .nav-links {
-    display: flex;
+  header ul {
+    border: 0;
+    position: static;
+    left: unset;
+    top: unset;
   }
 }
-#nav .logo-small {
-  text-indent: -9999px;
-  width: 126px;
-  height: 16px;
-  margin: 0;
-  padding: 0;
-  line-height: 1;
-  background-image: url("../images/logo-small.svg");
-  background-position: 0 0;
-  background-size: 100%;
-  background-repeat: no-repeat;
+header ul li {
+  margin-right: 3rem;
+}
+header ul a {
+  display: block;
+  text-decoration: none;
+  line-height: 6rem;
+}
+header .logo-small {
+  margin-top: 3.7rem;
 }
 #features {
   background-color: #3F3D56;

@@ -814,3 +814,29 @@ textarea.field {
   max-width: 540px;
   margin: 0 3rem;
 }
+a.small-logo {
+  background-image: url("../images/logo-small.svg");
+  background-repeat: no-repeat;
+  background-position: top left;
+  display: block;
+  width: 126px;
+  height: 16px;
+  text-indent: -9999px;
+}
+footer {
+  margin-top: 9rem;
+  margin-bottom: 9rem;
+}
+footer .small-logo {
+  margin-bottom: 3rem;
+}
+footer nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+footer nav li {
+  margin: 0 3rem 3rem 0;
+}

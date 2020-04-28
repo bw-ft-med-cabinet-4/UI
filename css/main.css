@@ -771,3 +771,24 @@ textarea.field {
   text-transform: uppercase;
   font-weight: 800;
 }
+#cta {
+  background-color: #3F3D56;
+  padding-top: 9rem;
+  padding-bottom: 9rem;
+  display: flex;
+  justify-content: center;
+}
+#cta p,
+#cta li,
+#cta h1,
+#cta h2,
+#cta h3,
+#cta h4,
+#cta h5 {
+  color: white;
+  text-align: center;
+}
+#cta .cta-inner {
+  max-width: 540px;
+  margin: 0 3rem;
+}

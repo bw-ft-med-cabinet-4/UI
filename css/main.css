@@ -784,7 +784,7 @@ textarea.field {
 #reviews .review {
   margin-bottom: 3rem;
   border: 1px solid #d8d8d8;
-  padding: 3rem;
+  padding: 6rem 3rem;
   border-radius: 0.5rem;
   text-align: center;
 }

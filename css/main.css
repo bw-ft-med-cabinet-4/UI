@@ -939,3 +939,23 @@ footer nav li {
   border: 4px solid #d8d8d8;
   border-radius: 9px;
 }
+.breadcrumbs {
+  list-style-type: none;
+  margin: 0 0 3rem 0;
+  padding: 0;
+  display: flex;
+}
+.breadcrumbs a {
+  padding-right: 1.5rem;
+}
+.breadcrumbs li {
+  color: #8F8F8F;
+  margin-right: 1.5rem;
+  text-transform: capitalize;
+}
+.breadcrumbs li::after {
+  content: ">";
+}
+.breadcrumbs li:last-child::after {
+  content: "";
+}

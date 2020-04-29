@@ -1,0 +1,34 @@
+
+.make-cols(@suffix) {
+
+    @counter: 12;
+
+    .loop(@counter) when (@counter > 0) {
+        .col-@{suffix}-@{counter} {
+            width: 100% / 12 * @counter;
+        }
+        .loop((@counter - 1));
+    }
+
+    .loop(@counter);
+}
+
+
+/*
+    Usage:
+    for single property  .smooth-transition(color);
+    for multiple properties  .smooth-transition(~"color, background-color"); 
+*/
+.smooth-transition(@property) {
+    transition-property: @property;
+    transition-duration: 0.4s;
+    transition-timing-function: ease;
+}
+
+
+.no-appearance() {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+}

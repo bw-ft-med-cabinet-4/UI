@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+main {
+    padding-top: 9rem + 6rem + @basic-gutter * 2;
+    @media @desktop {
+        padding-top: 9rem + @basic-gutter * 2;
+    }
+}
+
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 100%;
+    padding: 0 @basic-gutter;
+    margin: 0 auto;
+
+    @media @desktop {
+        width: @container-width;
+    }
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    
+    [class*="col-"]:last-child {
+        padding-right: 0;
+    }
+}
+
+
+// Columns
+
+[class*="col-"] {
+    padding-right: @basic-gutter;
+    
+    &:only-child {
+        padding-right: 0;
+    }
+}
+
+.make-cols(xs);
+
+@media @phone {
+    .make-cols(sm);
+}
+
+@media @tablet {
+    .make-cols(md);
+}
+
+@media @desktop {
+    .make-cols(lg);
+}
